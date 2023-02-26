@@ -1,0 +1,136 @@
+
+<!-- Name: Saatvik -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head of the Webpage having title and icon -->
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8" />
+    <meta name="description" content="A web page about IoT Applications" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Saatvik" />
+    <link rel="icon" href="mylogo.jpeg">
+    <title>IoT Applications</title>
+    <style>
+      h1,h2,p
+      {
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <!-- Body of the webpage containing all the other things -->
+  <body> 
+
+    
+    <h1 >IoT Applications</h1>
+    <div class="container">
+    <div id="navbar"></div>
+
+
+  <!-- Summary of Activity 1  -->
+    <div class = "p1">
+    <h2 >Summary of Activity 1</h2> 
+    <p >An IoT (Internet of Things) application is a software solution that enables communication and interaction between connected devices over a network. These applications are designed to collect, process, and analyze data from IoT devices and present it in a meaningful way to users. Some examples of IoT applications include smart home systems, wearable devices, industrial automation systems, and smart city infrastructure.
+    </p>
+    </div>
+    
+  <!-- Summary of Activity 2 -->
+    <div class = "p2">
+    <h2 >Summary of Activity 2</h2>
+    <p >A smart building is a building that utilizes IoT technology and automation to optimize energy efficiency, improve comfort, and increase safety. A smart building typically requires the following components:
+      •	IoT Sensors: To collect data on temperature, occupancy, lighting, and other environmental factors.
+      •	Network infrastructure: To connect all devices and sensors to a central system.<br>
+      •	Building Management System (BMS): To control and automate various building systems, such as heating, cooling, lighting, and security.
+      •	User Interfaces: To provide occupants with a way to interact with the building's systems and access information on energy use and other metrics.
+    </p>
+    </div>
+
+  <!-- Summary of Activity 3 -->
+    <div class = "p3">
+    <h2 >Summary of Activity 3</h2>
+    <p >An IoT control interface is the interface through which users can interact with and control IoT devices. It typically includes a graphical user interface (GUI) that allows users to monitor and control devices, as well as an application programming interface (API) that enables developers to create custom integrations and automations. An IoT control interface should be user-friendly, secure, and accessible from multiple devices and platforms, such as smartphones, tablets, and desktop computers.
+    </p>
+    </div>
+    
+    <h1 id="h1">Examples of IoT Applications</h1>
+
+  <!-- Creation of an unordered list -->
+    <ul>
+
+        <div id="d1">
+        <li><b>Arduino iot cloud</b></li>
+        <p id="p1">Arduino IoT Cloud is a platform offered by Arduino that provides an easy-to-use cloud-based service for Internet of Things (IoT) projects. It allows users to connect their Arduino boards and other devices to the cloud and manage them remotely. Arduino IoT Cloud provides features such as device management, data storage, and data visualization, enabling users to quickly and easily build IoT applications. The platform is built on top of the popular open-source Arduino development platform, making it accessible to a wide range of users with different skill levels.</p>
+        </div>
+        
+        <div id="d1">
+        <li><b>Smart security system</b></li>
+        <p id="p2">A smart security system is a computerized system that integrates multiple security features such as cameras, motion detectors, and alarm systems into one unified platform that can be monitored and controlled remotely. The goal is to provide increased convenience, efficiency, and enhanced protection for homes, businesses, or any other property. These systems often use wireless technology and can be controlled through a mobile app or web interface.</p>
+        </div>
+        
+        
+        <div id="d1">
+        <li><b>Smart wearable devices</b></li>
+        <p id="p3">A smart wearable device is a piece of technology that is worn on the body and equipped with various sensors, processors, and communication capabilities. These devices often connect to a smartphone or other device and provide functionality such as fitness tracking, health monitoring, communication, and more. Examples of smart wearable devices include smartwatches, fitness trackers, and smart glasses. They are designed to provide a convenient and immersive experience for the user, offering a combination of wearable technology and the Internet of Things (IoT) to bring more intelligence and connectivity to daily life.</p>
+        </div>
+        
+
+        <div id="d1">
+        <li><b>Healthcare Monitoring Systems</b></li>
+        <p id="p4">An advaced(smart) health monitoring system is a technology that uses sensors, wearable devices, and other devices to collect data about a person's health and wellness. The collected data is processed and analyzed to provide insights and information about the person's health status, helping them to better manage their health and wellness. These systems often integrate with mobile apps and other software to provide a comprehensive and user-friendly experience. The goal of which is to improve health outcomes, prevent health problems, and promote wellness by making it easier for individuals to track their health data and make informed decisions about their health. </p>
+        </div>
+        
+
+        <div id="d1">
+        <li><b>Agriculture Monitoring and Control</b></li>
+        <p id="p5">Agricultural monitoring and control is the use of technology to monitor and control various aspects of agriculture such as soil moisture, temperature, crop growth, and other factors. The goal is to improve crop yields, reduce waste, and optimize resource use in agriculture. Agricultural monitoring and control systems often use sensors, wireless communication, and software to collect and analyze data in real-time, providing insights and information about the health and growth of crops. The collected data can be used to automatically control various aspects of the agricultural environment, such as irrigation and nutrient delivery, to improve crop growth and health. These systems also allow farmers to remotely monitor and control their crops, reducing the need for manual labor and increasing efficiency.</p>
+        </div>
+    </ul>
+
+    <!-- Usage of  div tag to make about me section along with the image so it is seperated -->
+    <div id="a">
+      <img src="mie.png" alt="author" height="300px" id="img">
+      <h2 id="h2"> About Me </h2>
+      <p id="p0"> <br>Hello Everyone! My name is <b>Saatvik</b> and I am a student of B.E. Software Engineering in Chitkara University, Rajpura having student id. <b>2110994786</b>. I have a keen interest in cyber security and Full-Stack development  <span id="dots">...</span><span id="more">. I have studied 12 units till date which include DSA, Embedded systems, Data Capture Technologies, Data and Information management,etc. Through this unit my aim is to excel in the right direction towards becoming a full-stack developer.</span></p></p>
+
+      
+    <!-- Creation and functioning of the read more button -->
+      <button onclick="myFunction()" id="myBtn">Read more</button>
+
+      <script>
+      function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more"; 
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less"; 
+          moreText.style.display = "inline";
+        }
+      }
+      </script>
+    </div>
+
+    
+
+  <!-- Footer of the webpage -->
+    <footer>
+
+    <!-- Addition of time and date under the footer -->
+    <button type="button"
+    onclick="document.getElementById('demo').innerHTML = Date()">
+    Click here to display Date and Time.</button>
+    <p id="demo"></p>
+
+    &copy; Copyright 2023
+    </footer>
+
+  </body>
+</html>
